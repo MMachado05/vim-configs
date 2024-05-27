@@ -1,0 +1,123 @@
+snippet psvm "Java main() method" b
+/**
+ * Main method.
+ */
+public static void main(String[] args) {
+	$1
+}
+endsnippet
+
+snippet pcl "Empty public class" b
+/**
+ * ${1: Class description.}
+ *
+ * @author Marcial Machado
+ */
+public class ${2:ClassName} {
+	$3
+}
+endsnippet
+
+snippet pfclpr "Empty public final class with a private constructor" b
+/**
+ * ${1: Class description.}
+ * 
+ * @author Marcial Machado
+ */
+public final class ${2:ClassName} {
+
+	/**
+	 * No argument constructor--private to prevent instantiation.
+	 */
+	private $2() {
+		// No code here
+	}
+
+	$3
+}
+endsnippet
+
+snippet pclinit "Public class with initializer" b
+/**
+ * ${1: Class description.}
+ * 
+ * @author Marcial Machado
+ */
+public class ${2:ClassName} {
+	
+	/**
+	 * Initializes an instance of $2
+	 */
+	public $2(${3:args}) {
+		$4
+	}
+}
+endsnippet
+
+snippet pclmain "Public class with main function" b
+/**
+ * ${1: Class description.}
+ * 
+ * @author Marcial Machado
+ */
+public class ${2:ClassName} {
+	
+	/**
+	 * $2's main function.
+	 */
+	public static void main(String[] args) {
+		$3
+	}
+}
+endsnippet
+
+snippet tests "A JUnit4 test class skeleton" b
+import org.junit.Test;
+import org.junit.Before;
+
+import static org.junit.Assert.*;
+
+public class ${1:ClassName}Test {
+	
+	public $1 ${2:ClassInstance};
+
+	@Before
+	public void setUp() {
+		this.$2 = new $1(${3:args});
+	}
+
+}
+endsnippet
+
+snippet test "A JUnit4 test case" b
+@Test
+public void test${1:TestName}() {
+	$2
+}
+endsnippet
+
+snippet sout "System.out.println()" b
+System.out.println($1);
+endsnippet
+
+snippet jdoc "Empty Javadoc" b
+/**
+ * $1
+ */
+endsnippet
+
+snippet maintestcl "Private test class for running tests on run" b
+class TestFormatter {
+	static void printTestResult(boolean expected, boolean actual, ${1:InputType} input) {
+		System.out.print("Result on test '" + String.toString(input) + "': ");
+		if (expected == actual)
+			System.out.println("\u001B[32m" + "PASSED" + "\033[0m");
+		else
+			System.out.println("\033[0;31m" + "FAILED" + "\033[0m");
+	}
+}
+endsnippet
+
+snippet maintest "Test for the private test class" b
+TestFormatter.printTestResult(${1:expected}, ${2:actual}, ${3:input});
+endsnippet

@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/marcialalfonso/Documents/OSU/Academics/AU23/CSE2221/workspace/Hailstone/src'
+let g:netrw_dirhist_8='/home/marcialalfonso/Documents/OSU/Academics/AU23/CSE2221/workspace/Hailstone'
+let g:netrw_dirhist_7='/home/marcialalfonso/Documents/OSU/Academics/AU23/CSE2221/workspace/ProjectTemplate'
+let g:netrw_dirhist_6='/home/marcialalfonso/Documents/OSU/Academics/AU23/CSE2221/workspace'
+let g:netrw_dirhist_5='/home/marcialalfonso/Documents/OSU/Academics/AU23/CSE2221'
+let g:netrw_dirhist_4='/home/marcialalfonso/Documents/OSU/Academics/AU23/CSE2221/workspace/ProjectTemplate'
+let g:netrw_dirhist_3='/home/marcialalfonso/Documents/OSU/Academics/AU23/CSE2221/workspace'
+let g:netrw_dirhist_2='/home/marcialalfonso/Documents/OSU/Academics/AU23/CSE2221'
+let g:netrw_dirhist_1='/home/marcialalfonso/Documents/Personal Projects/DailyByte/4_day-four/build'
+let g:netrw_dirhist_0='/home/marcialalfonso/Documents/Personal Projects/DailyByte/1_day-one/app/build'
